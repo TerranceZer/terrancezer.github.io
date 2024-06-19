@@ -139,7 +139,7 @@ span {
 }
 
 .hero{
-    background-image: url(/freelancer_inicio/img/hero.jpeg);
+    background-image: url(/img/hero.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 -100px;
