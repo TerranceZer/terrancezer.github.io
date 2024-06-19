@@ -142,7 +142,6 @@ span {
     background-image: url(/img/hero.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 -100px;
     height: 45rem;
     position: relative;
 }
