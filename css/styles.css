@@ -31,15 +31,15 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .contenedor-principal {
     max-width: 1250px;
-    margin: auto;
+    margin: 3rem auto;
     background-color: whitesmoke;
     padding: 5rem 5rem;
-
+    border-radius: 1rem;
     animation-name: bounceIn;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
@@ -65,7 +65,6 @@ h3 {
 
 .titulo {
     text-align: center;
-    font-size: 3.8rem; /* 1 REM = 10 px */
 }
 
 span {
@@ -91,6 +90,12 @@ span {
 @media (min-width: 550px) {
     .hero-column #zer{
         width: 20%;
+    }
+
+    .servicios {
+        display: grid ;
+        grid-template-columns: 1fr 1fr; 
+        column-gap: 10rem;
     }
 }
 
@@ -197,4 +202,28 @@ a.boton:hover{
 
 footer{
     text-align: center;
+}
+
+.sombreado {
+    box-shadow: 0px 0px 50px 0px #959595;
+}
+
+.contacto {
+    background-color: var(--primario);
+}
+
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--terciario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
