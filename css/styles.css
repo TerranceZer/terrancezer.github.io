@@ -194,8 +194,29 @@ a.boton{
 
 a.boton:hover{
     background-color: var(--terciario);
+    cursor: pointer;
 }
 
+.contacto .boton {
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin: 1rem auto;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    text-align: center;
+    border: none;
+    
+    
+}
+
+.contacto .boton:hover {
+    background-color: var(--terciario);
+    cursor: pointer;
+}
 
 .hero-row .hero-column {
     display: flex;
@@ -223,7 +244,7 @@ footer{
 }
 
 .contacto fieldset{
-
+    border: none;
 }
 
 .contacto legend{
@@ -269,4 +290,11 @@ footer{
     display: block;
     margin-top: 0.5rem;
     font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 1rem;
 }
