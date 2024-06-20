@@ -55,7 +55,7 @@
         <main class="contenedor-principal sombreado">    
             <h2>Objetivo Profesional</h2>
             <section>
-            <p>
+            <p class="texto">
                 Mi objetivo profesional es especializarme en proyectos de backend, 
                 combinando las reglas de negocio de mis clientes con mis habilidades 
                 técnicas para generar productos confiables y eficientes. Aspiro a convertirme 
@@ -65,7 +65,7 @@
                 futuro, me proyecto encontrando un nicho donde pueda aplicar mis habilidades 
                 empresariales y emprendimiento, creando soluciones significativas y sostenibles.
             </p>
-            <p>
+            <p class="texto">
                 Actualmente, mantengo mi disponibilidad para ofrecer servicios de soporte técnico, 
                 aprovechando mi experiencia en la resolución de problemas y mi capacidad para 
                 comunicarme de manera efectiva con los usuarios.
@@ -81,21 +81,18 @@
                 <section class="servicio">
                     <h3 class="titulo">Desarrollo Web</h3>
                     <div class="iconos">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-network" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code-circle-2" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M6 9a6 6 0 1 0 12 0a6 6 0 0 0 -12 0" />
-                            <path d="M12 3c1.333 .333 2 2.333 2 6s-.667 5.667 -2 6" />
-                            <path d="M12 3c-1.333 .333 -2 2.333 -2 6s.667 5.667 2 6" />
-                            <path d="M6 9h12" />
-                            <path d="M3 20h7" />
-                            <path d="M14 20h7" />
-                            <path d="M10 20a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                            <path d="M12 15v3" />
-                        </svg>
+                            <path d="M8.5 13.5l-1.5 -1.5l1.5 -1.5" />
+                            <path d="M15.5 10.5l1.5 1.5l-1.5 1.5" />
+                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                            <path d="M13 9.5l-2 5.5" />
+                          </svg>
                     </div>
-                    <p>
+                    <p class="texto">
                         Ofrezco mis habilidades en desarrollo web enfocandome en soluciones eficientes y personalizadas.
                         Actualmente manejo las siguentes tecnologías:
+                    </p>
                         <ul>
                             <li>
                                 <p>python</p> 
@@ -137,13 +134,12 @@
                                 </svg>
                             </li>
                         </ul>
-                    </p>
                 </section>
         
                 <section class="servicio">
                     <h3 class="titulo">Soporte Técnico</h3>
                     <div class="iconos">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-24-hours" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-24-hours" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                             <path d="M4 13c.325 2.532 1.881 4.781 4 6" />
                             <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2" />
@@ -151,42 +147,46 @@
                             <path d="M12 15h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" />
                             <path d="M18 15v2a1 1 0 0 0 1 1h1" />
                             <path d="M21 15v6" />
-                        </svg>
+                          </svg>
                     </div>
-                    <p>
+                    <p class="texto">
                         Llevo años haciendo soporte técnico, puedo hacer mantenimiento preventivo de equipos, respaldo de información mediante imágenes del sistema, soporte de redes, ponchado de cables, detección de fallas, escucha activa de usuarios, recepción de tickets,
                     </p>
                 </section>
 
             </div>
 
-            <h2>Contacto</h2>
+            <h2 class="titulo">Contacto</h2>
 
             <section>
                 <form action="" class="contacto">
                     <fieldset>
                         <legend>Contáctame llenando el formulario.</legend>
-                        <div>
-                            <label for="">Nombre</label>
-                            <input type="text" placeholder="Nombre">                    
+                        <div class="contenedor-contacto">
+                            <div class="campo">
+                                <label for="">Nombre</label>
+                                <input type="text" placeholder="Nombre">                    
+                            </div>
+                            <div class="campo">
+                                <label for="">Empresa</label>
+                                <input type="text" placeholder="Razón Social">
+                            </div>
+                            <div class="campo">
+                                <label for="">Teléfono</label>
+                                <input type="text" placeholder="Para estar en contacto">
+                            </div>
+                            <div class="campo">
+                                <label for="">Correo</label>
+                                <input type="mail" placeholder="Mail">
+                            </div>
+                            <div class="campo">
+                                <label for="">Mensaje</label>
+                                <textarea name="" id="" placeholder="¿En qué te puedo ayudar?"></textarea>
+                            </div>
                         </div>
-                        <div>
-                            <label for="">Empresa</label>
-                            <input type="text" placeholder="Razón Social">
-                        </div>
-                        <div>
-                            <label for="">Teléfono</label>
-                            <input type="text" placeholder="Para estar en contacto">
-                        </div>
-                        <div>
-                            <label for="">Correo</label>
-                            <input type="mail" placeholder="Mail">
-                        </div>
-        
-                        <label for="">Mensaje</label>
-                        <textarea name="" id="" placeholder="¿En qué te puedo ayudar?"></textarea>
-        
+                        
                         <button type="submit" name="" id="">Contactar</button>
+                        
                     </fieldset>
                 </form>  
             </section>

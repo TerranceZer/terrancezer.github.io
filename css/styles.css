@@ -1,8 +1,9 @@
  :root{
-    --primario: rgb(11, 102, 173);
-    --secundario:rgb(244, 255, 254);
-    --terciario: #FF7F00;
-    --cuaternario: #919faa;
+    --primario:  #0a3b61;
+    --secundario:  #d95b43;
+    --terciario: #335645;
+    --cuaternario: #ffe7d0;
+    --blanco: #ffffff;
     --font: "Roboto Serif", serif;
  }
 
@@ -19,7 +20,7 @@ html {
 body {
     font-size: 16px; /* 1 rem = 10px */
     font-family: var(--font);
-    background-image: linear-gradient(to top, #919faa 0%, white 100%);
+    background-image: linear-gradient(to top, #919faa 0%, var(--blanco) 100%);
 }
 
 h1 {
@@ -28,10 +29,12 @@ h1 {
 
 h2 {
     font-size: 3rem;
+    color: var(--primario);
 }
 
 h3 {
     font-size: 2rem;
+    color: var(--primario);
 }
 
 .contenedor-principal {
@@ -147,7 +150,7 @@ span {
     background-image: url(/img/hero.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 45rem;
+    height: 55rem;
     position: relative;
 }
 
@@ -165,21 +168,21 @@ span {
 }
 
 .hero-content a {
-    color:var(--terciario);
+    color:var(--cuaternario);
     font-weight: bold;
 }
 
 
 .hero-content h2,
 .hero-content p {
-    color: white;
+    color: var(--blanco);
 }
 
 a.boton{
     background-color: var(--primario);
-    color: white;
+    color: var(--blanco);
     padding: 1rem 3rem;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -209,7 +212,27 @@ footer{
 }
 
 .contacto {
-    background-color: var(--primario);
+    background-color: var(--cuaternario);
+    width: min(60rem , 100%);
+    border-color: #0a3b61;
+    border-width: 0.3rem;
+    border-style:solid;
+    border-radius: 1rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.contacto fieldset{
+
+}
+
+.contacto legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--secundario);
 }
 
 .servicio .iconos{
@@ -226,4 +249,24 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.texto {
+    text-align: justify;
+    line-height: 2;
+}
+
+.contenedor-contacto {
+
+}
+
+.campo {
+    
+}
+
+.campo label {
+    color: var(--primario);    
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
 }
