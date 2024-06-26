@@ -398,4 +398,5 @@ footer{
 .footer {
     text-align: center;
     color: var(--blanco);
+    margin: 2rem 0;
 }
