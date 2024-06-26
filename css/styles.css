@@ -145,10 +145,14 @@ span {
 
     .servicios {
         grid-area: Servicios;
+        
+        
+    }
+
+    .servicios-grid{
         display: grid;
         grid-template-areas: "MisServicios MisServicios"
                              "Soporte Desarrollo";
-        
     }
 
     .educacion {
@@ -343,9 +347,8 @@ footer{
     cursor: pointer;
 }
 
-
-
-.servicio .iconos{
+.servicio1 .iconos,
+.servicio2 .iconos{
     height: 15rem;
     width: 15rem;
     background-color: var(--terciario);
@@ -356,9 +359,7 @@ footer{
 }
 
 .servicio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-area: MisServicios;
 }
 
 .texto {
