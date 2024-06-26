@@ -1,6 +1,6 @@
  :root{
     --primario:  #0a3b61;
-    --secundario:  #d95b43;
+    --secundario:  #86a3f1;
     --terciario: #5c622d;
     --cuaternario: #ffe7d0;
     --blanco: #ffffff;
@@ -34,14 +34,14 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--primario);
 }
 
 
 .contenedor {
     max-width: 1250px;
-    margin: 3rem auto;
+    margin: 2rem auto;
     background-color: whitesmoke;
     padding: 5rem 5rem;
     border-radius: 1rem;
@@ -89,13 +89,19 @@ span {
     align-items: center;
 }
 
+.aside ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items:start;
+}
 
 @media (max-width: 320px) {
    a.boton{
     width: 70%;
    }
    .banner-column #zer{
-    width: 100%;
+    width: 50%;
 }
 }
 
@@ -140,17 +146,30 @@ span {
     .servicios {
         grid-area: Servicios;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column: ;
+        grid-template-areas: "MisServicios MisServicios"
+                             "Soporte Desarrollo";
+        
+    }
+
+    .educacion {
+        grid-area: Educacion;
+        max-width: 120rem;
+        width: 100%;
+    }
+
+    .experiencia {
+        grid-area: Experiencia;
+        background-color: var(--blanco);
     }
     .main{
         display: grid;
         grid-template-areas: 
             "Main Aside"
-            "Main ."
+            "Experiencia Aside"
+            "Educacion Educacion"
             "Servicios Servicios"
             "Contacto Contacto";
-        column-gap: 1rem;
+        column-gap: 2rem;
         max-width: 950px;
         width: 100%;
         margin: 0 auto;
@@ -158,6 +177,7 @@ span {
 
     .banner-column #zer {
         width: 70%;
+        margin: auto auto;
     }
 
     .container {
@@ -171,9 +191,6 @@ span {
         column-gap: 1rem;
     }
 
-    li {
-        
-    }
     .campo:nth-child(3),
     .campo:nth-child(4),
     .campo:nth-child(5){
@@ -184,9 +201,17 @@ span {
 
 }
 
-@media (min-width: 900px) {
+@media (min-width: 990px) {
     .banner-column #zer {
         width: 50%;
+    }
+
+    .banner-column p {
+        font-size: 2rem;
+    }
+
+    .main {
+        max-width: 120rem;
     }
 }
 
@@ -214,7 +239,7 @@ span {
     background-image: url(/img/hero.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 55rem;
+    height: 70rem;
     position: relative;
 }
 
@@ -296,7 +321,7 @@ footer{
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
-    color: var(--secundario);
+    color: var(--primario);
 }
 
 .contacto .boton {
