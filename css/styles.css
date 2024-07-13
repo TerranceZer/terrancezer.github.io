@@ -51,25 +51,6 @@ h3 {
     
 }
 
-
-
-@keyframes bounceIn {
-    0% {
-      opacity: 0;
-      transform: translateX(-200px); /* Mover el div hacia arriba fuera de la pantalla */
-    }
-    60% {
-      opacity: 1;
-      transform: translateX(0); /* Devolver el div a su posición original */
-    }
-    80% {
-      transform: translateX(-20px); /* Rebote hacia arriba */
-    }
-    100% {
-      transform: translateX(0); /* Rebote hacia abajo y volver a la posición original */
-    }
-}
-
 .titulo {
     text-align: center;
 }
@@ -94,6 +75,10 @@ span {
     flex-direction: column;
     list-style: none;
     align-items:start;
+}
+
+.menu{
+    display: none;
 }
 
 @media (max-width: 320px) {
@@ -121,6 +106,15 @@ span {
         width: 15rem;
         text-align: center;
     }
+
+    .menu{
+        display:block;
+    }
+
+    .menu-toggle{
+        display: none;
+    }
+
     .banner-row{
         display: flex;
         flex-direction: row;
@@ -145,14 +139,13 @@ span {
 
     .servicios {
         grid-area: Servicios;
-        
-        
     }
 
     .servicios-grid{
         display: grid;
         grid-template-areas: "MisServicios MisServicios"
                              "Soporte Desarrollo";
+        column-gap: 3rem;
     }
 
     .educacion {
@@ -165,6 +158,7 @@ span {
         grid-area: Experiencia;
         background-color: var(--blanco);
     }
+
     .main{
         display: grid;
         grid-template-areas: 
@@ -223,7 +217,7 @@ span {
 #zer {
     margin-top: 3rem;
     justify-content: center;
-    width: 45%;
+    width: 30%;
     border-radius: 20rem;
 }
 
@@ -356,6 +350,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .servicio {
@@ -367,7 +362,23 @@ footer{
     line-height: 2;
 }
 
+.error{
+    background-color: rgb(185,0,0);
+    color: var(--blanco);
+    padding: 1rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
 
+.salida_error{
+    animation-name: fadeOutUp;
+    animation-duration: 1s;
+}
+
+.entrada_error{
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+}
 
 
 .campo {

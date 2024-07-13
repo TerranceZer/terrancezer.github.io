@@ -21,10 +21,10 @@
         <header><h1 class="titulo">Eliezer Alberto Gómez Cervantes</h1></header>
             <nav class="main-nav container">
                 <button class="menu-toggle">Menú</button>
-                <a href="index.html">Inicio</a>
-                <a href="#exp">Experiencia y Educación</a>
-                <a href="/docs/EliezerAlberto_GómezCervantes_CV.pdf">Descarga mi CV</a>
-                <a href="#contacto">Contacto</a>
+                <a class="menu" href="index.html">Inicio</a>
+                <a class="menu" href="#exp">Experiencia y Educación</a>
+                <a class="menu" href="/docs/EliezerAlberto_GómezCervantes_CV.pdf">Descarga mi CV</a>
+                <a class="menu" href="#contacto">Contacto</a>
             </nav>
     </div>
     
@@ -476,30 +476,30 @@
                 <h2 class="titulo">Contacto</h2>
     
                 <section>
-                    <form action="" class="">
+                    <form action="" class="formulario">
                         <fieldset>
                             
                             <legend>Contáctame llenando el formulario.</legend>
                             <div class="contenedor-contacto">
                                 <div class="campo">
-                                    <label for="">Nombre</label>
-                                    <input type="text" placeholder="Nombre">                    
+                                    <label for="nombre">Nombre*</label>
+                                    <input type="text" placeholder="Nombre" id="nombre">                    
                                 </div>
                                 <div class="campo">
-                                    <label for="">Empresa</label>
-                                    <input type="text" placeholder="Razón Social">
+                                    <label for="telefono">Telefono*</label>
+                                    <input type="text" placeholder="Teléfono" id="telefono">
                                 </div>
                                 <div class="campo">
-                                    <label for="">Teléfono</label>
-                                    <input type="text" placeholder="Para estar en contacto">
+                                    <label for="empresa">Empresa</label>
+                                    <input type="text" placeholder="Razón Social" id="empresa">
                                 </div>
                                 <div class="campo">
-                                    <label for="">Correo</label>
-                                    <input type="mail" placeholder="Mail">
+                                    <label for="correo" >Correo</label>
+                                    <input type="mail" placeholder="Correo" id="correo">
                                 </div>
                                 <div class="campo">
-                                    <label for="">Mensaje</label>
-                                    <textarea name="" id="" placeholder="¿En qué te puedo ayudar?" class="input-text"></textarea>
+                                    <label for="mensaje">Mensaje</label>
+                                    <textarea name="mensaje" id="mensaje" placeholder="¿En qué puedo ayudar?" class="input-text"></textarea>
                                 </div>
                             </div>
                             
@@ -518,5 +518,8 @@
             <p>Todos los derechos reservados Eliezer A. Gómez Cervantes. Junio 2024.</p>
         </footer>
 
+        
+        <script src="js/modernizr.js"></script>
+        <script src="js/scripts.js"></script>
 </body>
 </html>
