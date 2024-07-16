@@ -9,6 +9,9 @@ const datos = {
     mensaje: ''
 };
 
+const templateZer = "template_g3x8ldf";
+const templateRecruiter = "template_rkganh9";
+
 //Expresion regular para validar correos de dominios comunes.
 const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.(com|net|org|edu|gov|mil|biz|info|mobi|name|aero|jobs|museum|co|mx|uk|us|ca|au|de|fr|jp|ru|ch|it|nl|se|no|es|mil|gov|edu|int|pro|coop|tv|ws|travel|asia|cat|jobs|tel|online|site|tech|store|xyz)(\.[a-zA-Z]{2,})?$/;
 //Expresión regular para validar telefonos locales.
@@ -52,8 +55,9 @@ formulario.addEventListener('submit', function(e){
                 return;
             }
         }
-        //Enviar formulario por correo
-        EnviarMail(this);
+        //Enviar formulario por correo a Zer y al reclutador
+        EnviarMail(this , templateZer);
+        EnviarMail(this , templateRecruiter);
         showMensaje("¡Mensaje enviado! :D",0)
     }else {
         showMensaje('No puedo continuar sin tu nombre',1);
@@ -86,14 +90,14 @@ function showMensaje(mensaje, tipo){
     
 }
 
-function EnviarMail(formulario){
+function EnviarMail(formulario, template){
     emailjs.init({
         publicKey: "efLHra8Lu8AZKJEKE",
       });
 
-      emailjs.sendForm('service_zf3rryo', 'template_g3x8ldf', formulario)
+      emailjs.sendForm('service_zf3rryo', template , formulario)
       .then(() => {
-          console.log('SUCCESS!');
+          console.log('Correo Enviado!');
       }, (error) => {
           console.log('FAILED...', error);
       });

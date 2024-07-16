@@ -372,7 +372,7 @@ footer{
 }
 
 .success{
-    background-color: rgb(0, 185, 0);
+    background-color: rgb(75, 185, 0);
     color: var(--blanco);
     padding: 1rem 1rem;
     text-align: center;
