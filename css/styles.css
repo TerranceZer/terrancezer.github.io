@@ -61,10 +61,15 @@ span {
 
 .main-nav-color {
     background-color: var(--primario);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
    
 }
 
 .main-nav{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,6 +84,23 @@ span {
 
 .menu{
     display: none;
+    width: 100%;
+}
+
+.menu-toggle{
+    width: 100%;
+}
+
+.menu-toggle.active{
+    background-color: var(--terciario);
+}
+
+.block{
+    display: none;
+}
+
+.show{
+    display: block;
 }
 
 @media (max-width: 320px) {
@@ -240,6 +262,7 @@ span {
     background-size: cover;
     height: 70rem;
     position: relative;
+    margin-top: 10rem;
 }
 
 .banner-content {

@@ -21,6 +21,18 @@ const formulario = document.querySelector('.formulario');
 
 const telefono = document.querySelector('#telefono')
 
+const menu = document.querySelector('.menu-toggle')
+
+const menuElements = document.querySelectorAll('.menu')
+console.log(menuElements)
+//Evento para desplegar el menú en dispositivos moviles
+menu.addEventListener('click', function(e){
+    e.preventDefault();
+    menuElements.forEach((i) => i.classList.toggle('show'))
+    this.classList.toggle('active')
+})
+
+
 //Evento para preparar los datos mientras el usuario escribe en pantalla
 formulario.addEventListener('input', function(e){
     datos[e.target.id] = e.target.value;
