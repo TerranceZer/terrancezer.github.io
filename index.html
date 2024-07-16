@@ -483,19 +483,19 @@
                             <div class="contenedor-contacto">
                                 <div class="campo">
                                     <label for="nombre">Nombre*</label>
-                                    <input type="text" placeholder="Nombre" id="nombre">                    
+                                    <input name="nombre" type="text" placeholder="Nombre" id="nombre">                    
                                 </div>
                                 <div class="campo">
                                     <label for="telefono">Telefono*</label>
-                                    <input type="text" placeholder="Teléfono" id="telefono">
+                                    <input name="telefono" type="text" placeholder="Teléfono" id="telefono">
                                 </div>
                                 <div class="campo">
                                     <label for="empresa">Empresa</label>
-                                    <input type="text" placeholder="Razón Social" id="empresa">
+                                    <input name="empresa" type="text" placeholder="Razón Social" id="empresa">
                                 </div>
                                 <div class="campo">
                                     <label for="correo" >Correo</label>
-                                    <input type="mail" placeholder="Correo" id="correo">
+                                    <input name="correo" type="mail" placeholder="Correo" id="correo">
                                 </div>
                                 <div class="campo">
                                     <label for="mensaje">Mensaje</label>
@@ -519,7 +519,8 @@
         </footer>
 
         
-        <script src="js/modernizr.js"></script>
-        <script src="js/scripts.js"></script>
+        <script type="text/javascript" src="js/modernizr.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
