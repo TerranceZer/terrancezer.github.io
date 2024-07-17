@@ -191,7 +191,10 @@ span {
         max-width: 120rem;
         width: 100%;
     }
-
+    .educacion1,
+    .educacion2{
+        padding: 0rem 5rem;
+    }
     .experiencia {
         grid-area: Experiencia;
         background-color: var(--blanco);
