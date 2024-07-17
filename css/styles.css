@@ -80,6 +80,7 @@ span {
     flex-direction: column;
     list-style: none;
     align-items:start;
+    padding: 0rem 1rem;
 }
 
 .menu{
@@ -103,6 +104,15 @@ span {
     display: block;
 }
 
+.banner{
+    background-image: url(/img/hero.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70rem;
+    position: relative;
+    margin-top: 15rem;
+}
+
 @media (max-width: 320px) {
    a.boton{
     width: 70%;
@@ -113,9 +123,10 @@ span {
 }
 
 @media (min-width: 550px) {
-    
+    .banner{
+        margin-top: 10rem;
+    }
 
-   
 }
 
 @media (min-width: 768px) {
@@ -136,6 +147,10 @@ span {
 
     .menu-toggle{
         display: none;
+    }
+
+    .banner{
+        margin-top: 10rem;
     }
 
     .banner-row{
@@ -256,14 +271,7 @@ span {
     background-color: var(--terciario);
 }
 
-.banner{
-    background-image: url(/img/hero.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70rem;
-    position: relative;
-    margin-top: 10rem;
-}
+
 
 .banner-content {
     position: absolute;
