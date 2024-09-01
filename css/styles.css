@@ -1,7 +1,7 @@
  :root{
-    --primario:  #0a3b61;
-    --secundario:  #86a3f1;
-    --terciario: #5c622d;
+    --primario:  #215784;
+    --secundario:  #5c622d;
+    --terciario: #a9b47a;
     --cuaternario: #ffe7d0;
     --blanco: #ffffff;
     --font: "Roboto Serif", serif;
@@ -33,10 +33,7 @@ h2 {
     color: var(--primario);
 }
 
-h3 {
-    font-size: 2.5rem;
-    color: var(--primario);
-}
+
 
 
 .contenedor {
@@ -45,7 +42,7 @@ h3 {
     background-color: whitesmoke;
     padding: 5rem 5rem;
     border-radius: 1rem;
-    animation-name: bounceIn;
+    animation-name: fadeInLeft;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
     
@@ -61,10 +58,15 @@ span {
 
 .main-nav-color {
     background-color: var(--primario);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
    
 }
 
 .main-nav{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,10 +77,37 @@ span {
     flex-direction: column;
     list-style: none;
     align-items:start;
+    padding: 0rem 1rem;
 }
 
 .menu{
     display: none;
+    width: 100%;
+}
+
+.menu-toggle{
+    width: 100%;
+}
+
+.menu-toggle.active{
+    background-color: var(--terciario);
+}
+
+.block{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.banner{
+    background-image: url(/img/hero.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70rem;
+    position: relative;
+    margin-top: 15rem;
 }
 
 @media (max-width: 320px) {
@@ -91,9 +120,10 @@ span {
 }
 
 @media (min-width: 550px) {
-    
+    .banner{
+        margin-top: 10rem;
+    }
 
-   
 }
 
 @media (min-width: 768px) {
@@ -102,6 +132,7 @@ span {
         flex-direction: row;
         justify-content: space-around;
     }
+    
     a.boton{
         width: 15rem;
         text-align: center;
@@ -113,6 +144,10 @@ span {
 
     .menu-toggle{
         display: none;
+    }
+
+    .banner{
+        margin-top: 10rem;
     }
 
     .banner-row{
@@ -153,7 +188,10 @@ span {
         max-width: 120rem;
         width: 100%;
     }
-
+    .educacion1,
+    .educacion2{
+        padding: 0rem 5rem;
+    }
     .experiencia {
         grid-area: Experiencia;
         background-color: var(--blanco);
@@ -233,13 +271,7 @@ span {
     background-color: var(--terciario);
 }
 
-.banner{
-    background-image: url(/img/hero.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70rem;
-    position: relative;
-}
+
 
 .banner-content {
     position: absolute;
@@ -364,6 +396,14 @@ footer{
 
 .error{
     background-color: rgb(185,0,0);
+    color: var(--blanco);
+    padding: 1rem 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.success{
+    background-color: rgb(75, 185, 0);
     color: var(--blanco);
     padding: 1rem 1rem;
     text-align: center;
